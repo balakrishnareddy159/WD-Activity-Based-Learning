@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #123b70;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+nav {
+    background-color: #08264b;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.banner {
+    background-image: linear-gradient(
+        rgba(0, 30, 70, 0.65),
+        rgba(0, 30, 70, 0.65)
+    ), url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #222;
+    padding: 10px 22px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+.container h2 {
+    color: #123b70;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container > p {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #cccccc;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #123b70;
+    margin: 15px 10px 8px;
+}
+
+.card p {
+    padding: 0 15px;
+    margin-bottom: 8px;
+}
+
+.facilities {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 25px 45px;
+    border-radius: 8px;
+}
+
+.facilities li {
+    padding: 7px;
+}
+
+.contact {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 650px;
+    margin: auto;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: #123b70;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2165a8;
+}
+
+footer {
+    background-color: #08264b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .banner {
+        padding: 65px 15px;
+    }
+
+    .banner h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .container {
+        padding: 25px 15px;
+    }
+}
